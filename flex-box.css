@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.kol-body{
+    background-color: beige
+}
+.kol-header{
+    box-sizing: border-box;
+    text-align: center;
+    height: 200px;
+}
+
+.kol-h1{
+    display: block;
+    margin:20px 30px 20px 30px;
+    border-bottom: 2px solid black;
+}
+
+.kol-header > p{
+    color: dimgrey;
+    box-sizing: border-box;
+    display: block;
+    margin: 10px 0px 0px 10px;
+}
+.kol-posts{
+    box-sizing: border-box;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+}
+.kol-container{
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1500px;
+    justify-content: space-around;
+}

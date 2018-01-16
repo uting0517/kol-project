@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+
+/* My website start here */
+
+.kol-body{
+    background-color:aliceblue;
+    text-align: center;
+}
+
+.kol-p{
+    line-height: 2em;
+    font-size: 15px;
+    text-align: center;
+}
+
+.kol-h2{
+    display: block;
+    padding: 40px;
+     text-align: center;
+}
+
+.float{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+.width{
+    width: 10%;
+    height: auto;
+}
+.kol-header{
+    width: auto;
+    height:250px;
+    text-align: center;
+    font-size:20px;
+}
+.kol-container{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.kol-posts{
+    float: left;
+    margin: 5px;
+}
+
+.instagram-media{
+    width:600px; !important;
+}
+
+
+
