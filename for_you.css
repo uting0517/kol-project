@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-h1{
+.for-you-h1{
     display: block;
     text-align: center;
     padding: 50px;
@@ -23,14 +23,15 @@ h1{
     box-sizing: border-box;
     display: block;
     height: 100px;
-    margin: 0px;
+    margin: 20px;
     line-height: 2rem;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 3px;
     color:dimgrey;
 }
-img{
+.for-you-img{
+    text-align: center;
     box-sizing: border-box;
 }
 .first-quote{
