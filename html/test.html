@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/kol-style.css">
+
+</head>
+<body>
+        <div class="kol-container" id="tabs-1"></div>
+
+        </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    var links = [
+    "https://www.instagram.com/p/Bi_6QySF9Od/", "https://www.instagram.com/p/Biqm6yRF7VI/","https://www.instagram.com/p/Bg7iv7DD1S9/",
+    "https://www.instagram.com/p/BitTrJ_BtDF/","https://www.instagram.com/p/BiqfetQlAb8/","https://www.instagram.com/p/BilwQt6l40d/",
+    "https://www.instagram.com/p/BiZIeN2nGG5/","https://www.instagram.com/p/BiYrqX-n9ph/","https://www.instagram.com/p/BiJLVyDj36S/",
+    "https://www.instagram.com/p/BiHV-oyBF6E/","https://www.instagram.com/p/BhvjOSGnm_K/","https://www.instagram.com/p/Bhu_AI2hBQu/",
+    "https://www.instagram.com/p/Bgz-vweB4qK/","https://www.instagram.com/p/BgxMxz2h4eb/","https://www.instagram.com/p/Bgv10ognuCw/",
+    "https://www.instagram.com/p/BgvIcjAHCi9/","https://www.instagram.com/p/BgqY2j0nK3P/","https://www.instagram.com/p/BgXb8u-BqCm/",
+    "https://www.instagram.com/p/BgU4N3oBRRo/","https://www.instagram.com/p/BgPt4wghKfH/","https://www.instagram.com/p/BgOPOoKAMJ0/",
+    "https://www.instagram.com/p/BgTEIvRnI23/","https://www.instagram.com/p/BgLc4i0hzHg/","https://www.instagram.com/p/BgIjUJAn9h7/",
+    "https://www.instagram.com/p/BfdX8fVh7hj/","https://www.instagram.com/p/BfXaop5HUB6/","https://www.instagram.com/p/BfYjPwTB1Aj/",
+    "https://www.instagram.com/p/BfFyjQHBem2/","https://www.instagram.com/p/Be-tOEpAAJo/","https://www.instagram.com/p/Be2qZSBAUzo/",
+    "https://www.instagram.com/p/Be28fGIAkN0/","https://www.instagram.com/p/BeVNeYggGRN/","https://www.instagram.com/p/BeShFL4Heyl/",
+    "https://www.instagram.com/p/BeR7R9dHVq5/", "https://www.instagram.com/p/BeO-_sgBbmM/", "https://www.instagram.com/p/Bd67uUmgH8V/",
+                 ];
+    
+
+var sty = {"background":"#FFF", 
+                 "border":"0", 
+                 "border-radius":"3px", 
+                 "box-shadow" : "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
+                 "margin": "1px", 
+                 "max-width":"400px", 
+                 "padding":"0", 
+                 "width":"99.375%", 
+                 "width":"-webkit-calc(100% - 2px)",
+                  "width":"calc(100% - 2px)"}
+
+var ig_word = "<div style='padding:8px;'><div style='background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;'><div style='background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;'>&nbsp;<div></div>"
+
+for(i = 0; i < links.length ;i++){
+
+    $("#tabs-1").append(
+               $("<div></div>").addClass("kol-posts")
+                               .append($("<blockquote></blockquote>").addClass("instagram-media")
+                                                                     .attr("data-instgrm-permalink",links[i])
+                                                                     .attr("data-instgrm-version",8)
+                                                                     .css(sty)
+                                                                     .append(ig_word))
+                                                                     .append('<script async defer src="//www.instagram.com/embed.js"><\/script>')
+                                                                     
+     )
+
+}
+
+
+})
+
+</script>
+</body>
+</html>

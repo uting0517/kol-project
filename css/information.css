@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+
+.wrap{
+    width: %;
+    border: 2px solid lightgrey;
+    border-radius: 1%;
+    margin: 0px auto 20px auto;
+}
+
+.border_box{
+    width: 95%;
+    margin: auto auto 20px auto;
+    text-align: center;
+    background-origin: content-box;
+    background-image: url(https://farm5.staticflickr.com/4709/26239037518_3c14ddf77a_o.jpg);
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.clear{
+}
+/*--------- 標題＆icon Start----------*/
+.info_box{
+    width: 300px;
+    height: 70px;
+    background-color:white;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px 0px 15px;
+    position: relative;
+    top: 40px;
+}
+.info_box > div{
+    float:left;
+    margin: auto;
+}
+.ex_point{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    font-size: 46px;
+    font-weight: bolder;
+    color: white;
+}
+.info_text{
+    padding-left:10px;
+    font-size: 18px;
+}
+.about_us{
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 100px;
+    bottom: 9px;
+}
+/*------品牌故事--------*/
+.pink{
+    color: lightpink;
+    border-top:3px solid lightpink;
+}
+.bg_pink{
+    background-color: lightpink;
+}
+/*------初次購買--------*/
+.blue{
+    color: lightblue;
+    border-top:3px solid lightblue;
+}
+.bg_blue{
+    background-color: lightblue;
+}
+/*---------退換貨政策------------*/
+.orange{
+    color:orange;
+    border-top: 3px solid orange;
+}
+.bg_orange{
+    background-color: orange;
+}
+/*---------會員條款-----------*/
+.grey{
+    color: grey;
+    border-top:3px solid grey;
+}
+.bg_grey{
+    background-color: grey;
+}
+/*--------- 標題＆icon end----------*/
+
+/*-----------文章內容 Start-------------*/
+
+
+.para{
+    box-sizing: border-box;
+    margin: 50px auto;
+}
+.para > p{
+    display: block;
+    margin:25px 10px 10px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+
+/*-----------文章內容 end----------------*/
+
+
+.detail_box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-top: 2px dashed grey;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.detail_box > div{
+    font-size: 15px;
+    line-height: 2em;
+    margin: 10px;
+}
+
+/*-------------初次購買頁面----------------*/
+
+.info_topic{
+    display: block;
+    font-size:18px;
+    font-weight: 400;
+    color: black;
+    background-color: lightblue;
+    padding: 0px 10px;
+}
+.text_display{
+    display: block;
+    padding-top:20px; 
+    text-align: left;
+    margin: 20px;
+    border-bottom: 2px dashed grey;
+}
+
+.chinese, .english {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+.important_thingy{
+    margin: 20px;
+}
+
+.membership{
+    display: block;
+    border-bottom: 2px dashed grey;
+    font-size: 14px;
+    line-height: 2.3em;
+    margin: 10px 0px;
+}
+.payment{
+    display: block;
+    font-size: 13px;
+    line-height: 2em;
+}
+
+/*--------------退換貨政策----------------*/
+
+.policy{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.3em;
+    margin: 10px 10px;
+    padding:30px; 0px; 
+    text-align: left;
+}

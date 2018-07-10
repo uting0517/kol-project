@@ -102,3 +102,11 @@ footer{
     background-color: #ECECEC;
 }
 
+.mini8{
+    height: 400px;
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+}
+.mini8-post{
+}
