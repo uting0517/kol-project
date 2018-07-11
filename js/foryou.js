@@ -1,14 +1,13 @@
 $(document).ready(function(){
 
   var $window = $(window);
-  var $doc = $(document);
   var $para = $(".para");
-  var $btn = $("#fy-scroll a");
-
-  $btn.click(function(){
-    
-      
-    })
+  var top = $("#title-box");
+  
+  top.click(function(){
+  $("html, body").animate({scrollTop : 0 },800);
+  });
+ 
   
   $window.on("load scroll resize",function(){
     $para.each(function(){
@@ -17,13 +16,17 @@ $(document).ready(function(){
       var $windowH = $window.height();
     
       if($window.scrollTop() >= ( quoteTop + setH)-$windowH){
-        $(this).animate({opacity:"1"},700);
-      };
+        $(this).stop().animate({opacity:"1"},800);
+      }else{
+        $(this).stop().animate({opacity:"0"},600);
+      }
+      
   
     })
-  }
-  
-  )})
+  })
+
+
+})
   
   var cursor = "<span>|</span>";
   var count = 0;
@@ -46,12 +49,12 @@ $(document).ready(function(){
      
   typing();
 
+ var $scrollbtn = $("#fy-scroll a");
 
-  var quote = document.querySelectorAll(".quote");
-  console.log(quote);
-  console.log(quote[0].offsetTop);
-  console.log(quote[1].offsetTop);
-  console.log(quote[2].offsetTop);
-  console.log(quote[3].offsetTop);
-
-  
+ $scrollbtn.each(function(){
+   $(this).click(function(){ 
+    
+    $("html, body").animate({scrollTop:$($(this).attr("href")).offset().top - 100},600);
+   
+   })
+ })
