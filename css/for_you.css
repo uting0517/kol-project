@@ -1,8 +1,7 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
-
 
 .fy-header{
     width: 100%;
@@ -10,7 +9,6 @@
     position: fixed;
     z-index: 2;
     top: 0px;
-    padding-top: 25px;
     box-shadow: 0px 5px 20px rgba(173, 173, 173, 0.3)
 }
 
@@ -28,7 +26,8 @@
     font-size: 40px;
     letter-spacing: 2.5px;
     font-weight: bolder;
-    height: 30px;
+    padding: 10px;
+    font-family: "Lobster";
 }
 
 @keyframes blink {
@@ -66,20 +65,16 @@ cursor: default;
 
 
 
-.quote-decoration{
+.sub-title{
     text-align: center;
-    box-sizing: border-box;
     display: block;
-    margin: 15px;
-    line-height: 2rem;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 3px;
     color:dimgrey;
-}
-.for-you-img{
-    text-align: center;
-    box-sizing: border-box;
+    font-family: "Hind","微軟正黑體";
+    line-height: 2em;
+
 }
 
 .quote{
@@ -89,16 +84,20 @@ cursor: default;
     margin-top: 100px; 
 }
 
+.para {
+opacity: 0;
+}
 
-.para1{
+.para1, .para3{
     position: absolute;
     top: 40%;
     margin: 20px 20px 20px 50px; 
     line-height: 2rem;
     font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 3px;
+    font-family:"微軟正黑體";
     color:dimgrey;
+    letter-spacing: 3px;
+
 }
 .para2{
     position: absolute;
@@ -106,17 +105,14 @@ cursor: default;
     margin: 20px 20px 20px 50px; 
     line-height: 2rem;
     font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 3px;
+    font-family:"微軟正黑體";
     color:dimgrey;
+    letter-spacing: 3px;
+
 }
-.para3{
-    position: absolute;
-    top: 40%;
-    margin: 20px 20px 20px 50px; 
-    line-height: 2rem;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    color:dimgrey;
+
+.fy-footer{
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
 }
