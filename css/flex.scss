@@ -1,0 +1,83 @@
+$color:#d0d0d0;
+$border: 1px solid black;
+$bgimage: url("../for_you_image/images/flex-about.jpg"),
+          url("../for_you_image/images/flex-profile.jpg"),
+          url("../for_you_image/images/flex-works.jpg"),
+          url("../for_you_image/images/flex-contact.jpg");
+
+@mixin item-size{
+    box-sizing: border-box;
+    height: 100vh;
+    // border: $border;
+}
+
+@mixin section-para{
+    position: relative;
+    top: 50%;
+    font-size: 65px;
+    transform: rotate(90deg);
+    color: white;
+}
+
+
+.topic{
+    text-align: center;
+    font-family: "Lobster";
+    font-size: 40px;
+    padding: 20px;
+
+}
+
+.navbar ul{
+display:flex;
+padding: 10px;
+justify-content: center;
+flex-wrap: nowrap;
+}
+
+.navbar ul li{
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: default;
+}
+
+.navbar ul li:hover{
+    background-color: gray;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@for $i from 1 through 4 {
+    .spin-item-#{$i}{
+        @include item-size;
+        background-color:$color;
+        align-items: center;
+        background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), nth($bgimage ,$i);
+        background-repeat:no-repeat;
+        background-size: 1200px ;
+        background-position:center center;
+        
+
+        p{
+            @include section-para;
+            text-align: center;
+            line-height: 65px;
+            transition: all 800ms ease;
+            cursor: default;
+            opacity: 0.7;
+        }
+    }
+}
+
+.spin-box{
+    flex-grow: 1;
+    transition: all 500ms ease;
+}

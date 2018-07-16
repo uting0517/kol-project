@@ -1,0 +1,131 @@
+.topic {
+  text-align: center;
+  font-family: "Lobster";
+  font-size: 40px;
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.navbar ul li {
+  display: block;
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: default;
+}
+
+.navbar ul li:hover {
+  background-color: gray;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.spin-item-1 {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #d0d0d0;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../for_you_image/images/flex-about.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: center center;
+}
+.spin-item-1 p {
+  position: relative;
+  top: 50%;
+  font-size: 65px;
+  transform: rotate(90deg);
+  color: white;
+  text-align: center;
+  line-height: 65px;
+  transition: all 800ms ease;
+  cursor: default;
+  opacity: 0.7;
+}
+
+.spin-item-2 {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #d0d0d0;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../for_you_image/images/flex-profile.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: center center;
+}
+.spin-item-2 p {
+  position: relative;
+  top: 50%;
+  font-size: 65px;
+  transform: rotate(90deg);
+  color: white;
+  text-align: center;
+  line-height: 65px;
+  transition: all 800ms ease;
+  cursor: default;
+  opacity: 0.7;
+}
+
+.spin-item-3 {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #d0d0d0;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../for_you_image/images/flex-works.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: center center;
+}
+.spin-item-3 p {
+  position: relative;
+  top: 50%;
+  font-size: 65px;
+  transform: rotate(90deg);
+  color: white;
+  text-align: center;
+  line-height: 65px;
+  transition: all 800ms ease;
+  cursor: default;
+  opacity: 0.7;
+}
+
+.spin-item-4 {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #d0d0d0;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../for_you_image/images/flex-contact.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: center center;
+}
+.spin-item-4 p {
+  position: relative;
+  top: 50%;
+  font-size: 65px;
+  transform: rotate(90deg);
+  color: white;
+  text-align: center;
+  line-height: 65px;
+  transition: all 800ms ease;
+  cursor: default;
+  opacity: 0.7;
+}
+
+.spin-box {
+  flex-grow: 1;
+  transition: all 500ms ease;
+}
+
+/*# sourceMappingURL=flex.css.map */
